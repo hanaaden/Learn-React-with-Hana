@@ -1,1 +1,3 @@
-# this is week 1
+# this is week 1  the assignment 
+
+

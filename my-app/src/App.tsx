@@ -1,33 +1,53 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import {  useState } from 'react'
+
+
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+ 
+const [count , setCount] = useState(0)
+const [toggled , setToggled] = useState(false)
+const [toDo , setToDo] = useState([
+  "Learn React",
+  "practice setUps",
+  "push into github"
+])
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="contanier">
+        <div className="card">
+          <div className="card-body">
+            <h1>counter app</h1>
+            <div className="">
+              <h2>{count}</h2>
+              <button className='btn incre' onClick={()=> setCount(count+1)}>Increment</button>
+              <button className='btn dec'  onClick={()=> setCount(count-1) } disabled={count===0}>decrement</button>
+              <button className='btn res'  onClick={()=> setCount(0)} disabled={count===0}>Reset</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+
+      <div className="app">
+          
+        <button
+        className= {`toggle-btn ${toggled ? "toggled" : ""}`}
+        onClick={() => setToggled(!toggled)}
+        >
+          <div className="thumb"></div>
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+      <div className="todo">
+        <h1>My todo</h1>
+        <ul>
+          {toDo.map((toDo ,index)=>(
+            <li key={index}>
+              {toDo}
+            </li>
+          ))}
+        </ul>
+      </div>
     </>
   )
 }
