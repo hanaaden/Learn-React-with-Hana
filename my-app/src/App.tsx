@@ -1,53 +1,30 @@
-import {  useState } from 'react'
 
+import {BrowserRouter as Router , Routes ,Route , Link } from "react-router-dom"
+import Counter from "./Counter"
+import Todo from "./Todo"
+import Contact from "./Contact"
 
 import './App.css'
 
 function App() {
- 
-const [count , setCount] = useState(0)
-const [toggled , setToggled] = useState(false)
-const [toDo , setToDo] = useState([
-  "Learn React",
-  "practice setUps",
-  "push into github"
-])
-  return (
+  return(
     <>
-      <div className="contanier">
-        <div className="card">
-          <div className="card-body">
-            <h1>counter app</h1>
-            <div className="">
-              <h2>{count}</h2>
-              <button className='btn incre' onClick={()=> setCount(count+1)}>Increment</button>
-              <button className='btn dec'  onClick={()=> setCount(count-1) } disabled={count===0}>decrement</button>
-              <button className='btn res'  onClick={()=> setCount(0)} disabled={count===0}>Reset</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="app">
-          
-        <button
-        className= {`toggle-btn ${toggled ? "toggled" : ""}`}
-        onClick={() => setToggled(!toggled)}
-        >
-          <div className="thumb"></div>
-        </button>
-      </div>
-
-      <div className="todo">
-        <h1>My todo</h1>
-        <ul>
-          {toDo.map((toDo ,index)=>(
-            <li key={index}>
-              {toDo}
-            </li>
-          ))}
-        </ul>
-      </div>
+   
+    <Router>
+      <nav>
+         <Link to="/" className="home">Home</Link>
+    <Link to = "/counter" className="counter">Counter</Link>
+    <Link to = "/Todo" className="counter">To do app</Link>
+    <Link to = "/contact" className="counter">Contact Us</Link>
+     </nav>
+       <Routes>
+         <Route path='/'   element={<h1 className="Welcome">Welcome to my practice projects! This website showcases small React applications I have built to improve my skills. You can explore a counter app, a to-do list app, and a contact page. Each project demonstrates key concepts of React such as state management, routing, and working with local storage. Feel free to navigate through the links above to try out the apps and see how they work.</h1>}/>
+        <Route path='/counter' element={<Counter/>}></Route>
+        <Route path='/todo' element={<Todo/>}></Route>
+        <Route path='/contact' element={<Contact/>}></Route>
+       </Routes>
+     
+    </Router>
     </>
   )
 }
