@@ -5,7 +5,7 @@
 
 ---
 
-### 1 Importing what we need
+### 1  Importing what we need
 
 ```tsx
 import { useEffect, useState } from "react";
@@ -22,7 +22,7 @@ Think of it like this:
 
 ---
 
-### 2️⃣ Creating the component
+### 2 Creating the component
 
 ```tsx
 function Todo() {
