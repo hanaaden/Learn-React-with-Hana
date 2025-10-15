@@ -24,10 +24,11 @@ const App = () => {
     </div>
   );
 };
+export default App;
 
 ```
 
-export default App;
+
 
 # Step-by-Step Explanation
 
