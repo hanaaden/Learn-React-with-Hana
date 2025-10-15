@@ -60,3 +60,26 @@ Let’s say you have a blog app:
 
 	•	The next time it’s requested, it’s served instantly from Redis — no database query needed.
 
+
+## JWT
+A secure token used to verify a user’s identity after login.
+
+#### how it works 
+
+User logs in → server creates a token (JWT).
+
+The token is sent to the client (browser or app).
+
+The client sends this token with every request.
+
+The server checks the token → if valid, user is allowed in.
+
+
+### Cors 
+
+A security rule in browsers that controls which websites can talk to your server
+
+If your frontend (React app on port 3000) tries to call your backend (Express on port 5000), the browser blocks it — because they’re different origins.
+
+
+
