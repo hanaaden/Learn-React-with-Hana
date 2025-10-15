@@ -93,13 +93,6 @@ Component Rendering
 
 
 
-Key Concepts Learned
-	1.	useState for managing state in functional components.
-	2.	Event handling with onClick.
-	3.	Dynamic styling using state and style={{}}.
-	4.	Random selection logic using Math.random() and arrays.
-	5.	Re-rendering: React updates only the parts of the DOM that changed.
-
 
 
 
