@@ -1,3 +1,4 @@
+# Read about this repository 
 This repository is organized into multiple branches to help track beginner progress. Each branch represents a different stage of learning, 
 showing how the project grows step by step. You can explore the branches to see early experiments, new concepts, 
 and improvements as the project evolves. This way, anyone following along can understand the journey and learn gradually.
