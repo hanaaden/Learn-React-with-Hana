@@ -1,9 +1,8 @@
 
+
 # React Color Changer App
 
-
-Full Code
-
+```jsx
 import React, { useState } from "react";
 import "./App.css";
 
@@ -27,8 +26,6 @@ const App = () => {
 };
 
 export default App;
-
-
 
 # Step-by-Step Explanation
 
