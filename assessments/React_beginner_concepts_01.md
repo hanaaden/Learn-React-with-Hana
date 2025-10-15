@@ -116,6 +116,7 @@ Why we need the setter:
 	•	React tracks state internally.
 	•	If you change a variable directly (state = newValue), React doesn’t know the value changed → no re-render.
 	•	Calling setState(newValue) tells React:
+	
 	1.	Update the internal state.
 	2.	Re-render the component.
 	3.	Efficiently update only the parts of the DOM that changed (via virtual DOM diffing).
