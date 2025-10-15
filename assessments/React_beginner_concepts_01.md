@@ -25,6 +25,8 @@ const App = () => {
   );
 };
 
+```
+
 export default App;
 
 # Step-by-Step Explanation
