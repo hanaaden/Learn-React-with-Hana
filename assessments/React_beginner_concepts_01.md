@@ -81,18 +81,6 @@ Why not use text here?
 
 
 
-JSX and Dynamic Styling
-
-<h2 style={{ backgroundColor: bgcolor }}>{text}</h2>
-<button onClick={changeText}>Change</button>
-
-	•	<h2>: shows the text and applies the background color from bgcolor state.
-	•	Inline styling uses object notation: { backgroundColor: bgcolor }.
-	•	<button>: calls changeText on click, triggering the background color change.
-
-Key points:
-	•	Dynamic styling works by passing the state variable to the style.
-	•	You cannot use a string like "changeText" — React would treat it as a literal color name, which fails.
 
 
 
