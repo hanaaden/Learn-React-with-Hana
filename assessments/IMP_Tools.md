@@ -53,7 +53,10 @@ It stored data into the RAM
 Which makes it fast 
 
 Let’s say you have a blog app:
+
 	•	Every time a user views a post, your app fetches it from PostgreSQL (slow).
+
 	•	You can store that post data in Redis for a few minutes.
+
 	•	The next time it’s requested, it’s served instantly from Redis — no database query needed.
 
