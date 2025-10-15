@@ -88,10 +88,8 @@ Component Rendering
 	•	The App function runs once initially → React renders the initial UI.
 	•	When setBgcolor is called:
 	1.	React updates the internal state.
-	2.	React re-renders the <h2> element.
+	2.	React re-renders the h2 element.
 	3.	Virtual DOM compares old and new states → only <h2> background changes.
-
-Result: Clicking the button changes <h2>’s background without reloading the page.
 
 
 
