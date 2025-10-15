@@ -187,6 +187,7 @@ Q4: How does React re-render components?
 Answer:
 	•	React re-renders a component whenever its state or props change.
 	•	When a re-render happens:
+	
 	1.	The component function runs again.
 	2.	React builds a virtual DOM representing the new UI.
 	3.	React compares the new virtual DOM with the previous virtual DOM (diffing).
