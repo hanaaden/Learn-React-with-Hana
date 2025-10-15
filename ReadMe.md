@@ -98,11 +98,17 @@ Events
 
 ### tools 
 1.Why next .js >>> react
+
 2.Next.js vs react what to use when to use 
+
 3. Express 
+
 4. Redis
+
 5.postgeSQL
+
 6.mongodb
+
 7. Which is better PostgreSQL vs Mongodb 
 if you wanna master back-end
 
