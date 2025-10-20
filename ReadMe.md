@@ -1,4 +1,4 @@
-# this is week 1  the assignment 
+he# this is week 1  the assignment 
 
 you can you to branches to learn with me
 
@@ -116,4 +116,7 @@ if you wanna master back-end
 Which is better and why 
 Answer this question on your own
 
+
+Even learn about Tables vs schemes .
+Basics of yaml 
 
